@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/16c52c2e79.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="sticky top-0 bg-white z-10">
+    <div class="container max-w-[1200px] flex justify-between items-center">
+      <div class="flex p-6 text-2xl tablet:text-4xl">
+        <a href=""><i class="fa-solid fa-tree mr-3 text-gray"></i></a>
+        <a href="">Forest</a>
+      </div>
+      <div class="relative h-[40px] w-[40px] mr-6 tablet:hidden">
+        <span
+          class="absolute top-1/2 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2"></span>
+        <span
+          class="absolute top-1/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2"></span>
+        <span
+          class="absolute top-3/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2"></span>
+      </div>
+      <ul class="space-x-4 text-xl font-medium hidden tablet:flex">
+        <li class="py-8 hover:bg-black hover:text-white transition-colors duration-500"><a href="../../index.html"
+            id="home" class="px-5 py-8">Home</a></li>
+        <li class="py-8 hover:bg-black hover:text-white transition-colors duration-500"><a href="../../index.html#about" id="about"
+            class="px-5 py-8">O nas</a></li>
+        <li class="py-8 hover:bg-black hover:text-white transition-colors duration-500"><a href="../../index.html#offer" id="offer"
+            class="px-5 py-8">Oferta</a></li>
+        <li class="py-8 hover:bg-black hover:text-white transition-colors duration-500"><a href="" id="contact"
+            class="px-5 py-8">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+  <footer class="bg-footer">
+    <div class="desktop:flex tablet:container">
+      <div class="flex justify-center tablet:container tablet:justify-start">
+        <div class="group flex mb-2 py-6 desktop:py-8 text-2xl tablet:text-4xl desktop:text-5xl">
+          <a href="#home"><i class="home tree fa-solid fa-tree mr-3 text-gray"></i></a>
+          <a href="#home" class="group home">Forest</a>
+        </div>
+      </div>
+      <div class="text-center tablet:container tablet:mb-4 desktop:pt-8 desktop:pb-4 tablet:flex tablet:text-left">
+        <div class="tablet:mr-20">
+          <h3 class="mb-1 text-lg desktop:text-xl font-semibold desktop:font-bold">O nas</h3>
+          <ul>
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Historia</li>
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Parki</li>
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Opinie</li>
+          </ul>
+        </div>
+        <div class="tablet:mr-20">
+          <h3 class="mb-1 text-lg desktop:text-xl font-semibold desktop:font-bold">Nasza firma</h3>
+          <ul>
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Praca</li>
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Kadry</li>
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Zarząd</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-1 text-lg desktop:text-xl font-semibold desktop:font-bold">Dokumenty</h3>
+          <ul class="mb-4">
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Wnioski</li>
+            <li class="mb-1 text-base cursor-pointer"><a href=""></a>Rezerwacje</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="p-4">
+      <p class="text-xs text-center"> &copy; <span class="year"></span> Forest Group Company Ltd.</p>
+    </div>
+  </footer>
+  <script src="/src/js/main.js" type="module"></script>
+</body>
