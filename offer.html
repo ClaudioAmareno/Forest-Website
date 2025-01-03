@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pl" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./src/img/tree-solid.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forest Group | Strona Główna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="https://kit.fontawesome.com/16c52c2e79.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+  <!-- Navigation -->
+<section class="section" id="home"></section>
+  <nav class="navbar sticky top-0 bg-white z-10">
+  <div class="container max-w-[1200px] flex justify-between items-center">
+    <div class="group flex p-6 text-2xl tablet:text-4xl ">
+      <a href="#home"><i
+          class="home tree fa-solid fa-tree mr-3 text-gray group-hover:text-green transition-colors duration-500"></i></a>
+      <a href="#home" class="group home">Forest</a>
+    </div>
+    <!-- Burger menu -->
+    <button class="burger relative h-[40px] w-[40px] mr-6 z-10 tablet:hidden">
+      <span
+        class="first absolute top-1/2 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
+      <span
+        class="second absolute top-1/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
+      <span
+        class="third absolute top-3/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
+    </button>
+    <!-- navigation on mobile after click burger menu -->
+    <div
+      class="nav-screen fixed h-[100vh] w-full max-w-[450px] top-0 right-[-450px] bg-black text-white opacity-95 duration-500">
+      <div class="flex flex-col h-full justify-center items-center text-center">
+        <ul class="text-2xl space-y-4">
+          <li><a href="./index.html#home" class="nav-link-mobile nav-link">Home</a></li>
+          <li><a href="./index.html#about" class="nav-link-mobile nav-link">O nas</a></li>
+          <li><a href="./index.html#offer" class="nav-link-mobile nav-link">Oferta</a></li>
+          <li><a href="./contact.html" class="nav-link-mobile nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Default navigation -->
+    <ul class="space-x-4 text-xl font-medium hidden tablet:flex">
+      <li class="nav-link home py-8 hover:bg-black hover:text-white transition-colors duration-500" id="desktop-nav-home"><a href="./index.html#home"
+          class="px-5 py-8">Home</a></li>
+      <li class="nav-link about py-8 hover:bg-black hover:text-white transition-colors duration-500" id="desktop-nav-about"><a href="./index.html#about"
+          class="px-5 py-8">O
+          nas</a></li>
+      <li class="nav-link offer py-8 bg-black text-white transition-colors duration-500" id="desktop-nav-offer"><a href="./index.html#offer"
+          class="px-5 py-8">Oferta</a></li>
+      <li class="nav-link contact py-8 hover:bg-black hover:text-white transition-colors duration-500" ><a
+          href="./contact.html" class="px-5 py-8">Kontakt</a></li>
+    </ul>
+  </div>
+  </nav>
+  <!-- Header -->
+  <header class="section">
+    <div class="relative">
+      <img src="./src/img/jungle.jpg" class="tablet:h-[34rem] w-full object-cover"
+        alt="Porośnięty most w środku dżungli">
+      <div class="absolute inset-0 bg-black/[.7]"></div>
+      <div class="container absolute max-w-[1200px] flex flex-col justify-center inset-0 px-4 tablet:px-6 text-white">
+        <p class="tablet:text-xl">Forest Group</p>
+        <h1 class="text-xl tablet:text-4xl font-semibold">Najpiękniejszy park w Twojej okolicy!</h1>
+      </div>
+    </div>
+  </header>
+  <script src="./src/js/main.js" type="module"></script>
+</body>

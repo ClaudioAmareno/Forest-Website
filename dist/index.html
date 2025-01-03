@@ -1,65 +1,65 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="pl" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src/img/tree-solid.svg" />
+  <link rel="icon" type="image/svg+xml" href="/assets/tree-solid-seIptCUD.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forest Group | Strona Główna</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/16c52c2e79.js" crossorigin="anonymous"></script>
-  <script type="module" crossorigin src="/assets/index-BFM6p_WJ.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CF5i9Vv7.css">
+  <script type="module" crossorigin src="/assets/index-BgL8zIoY.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BQiuf39P.css">
 </head>
 
 <body class="body">
-  <!-- Nawigacja -->
-
+  <!-- Navigation -->
+<section class="section" id="home"></section>
   <nav class="navbar sticky top-0 bg-white z-10">
-    <div class="container max-w-[1200px] flex justify-between items-center">
-      <div class="group flex p-6 text-2xl tablet:text-4xl ">
-        <a href="#home"><i
-            class="home tree fa-solid fa-tree mr-3 text-gray group-hover:text-green transition-colors duration-500"></i></a>
-        <a href="#home" class="group home">Forest</a>
-      </div>
-      <!-- Burger menu -->
-      <button class="burger relative h-[40px] w-[40px] mr-6 z-10 tablet:hidden">
-        <span
-          class="first absolute top-1/2 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
-        <span
-          class="second absolute top-1/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
-        <span
-          class="third absolute top-3/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
-      </button>
-      <!-- navigation on mobile after click burger menu -->
-      <div
-        class="nav-screen fixed h-[100vh] w-full max-w-[450px] top-0 right-[-450px] bg-black text-white opacity-95 duration-500">
-        <div class="flex flex-col h-full justify-center items-center text-center">
-          <ul class="text-2xl space-y-4">
-            <li><a href="#home" class="nav-link-mobile nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link-mobile nav-link">O nas</a></li>
-            <li><a href="#offer" class="nav-link-mobile nav-link">Oferta</a></li>
-            <li><a href="src/pages/contact.html" class="nav-link-mobile nav-link">Kontakt</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- normal navigation -->
-      <ul class="space-x-4 text-xl font-medium hidden tablet:flex">
-        <li class="home py-8 hover:bg-black hover:text-white transition-colors duration-500"><a href="#home"
-            class="active-state nav-link px-5 py-8">Home</a></li>
-        <li class="nav-link about py-8 hover:bg-black hover:text-white transition-colors duration-500"><a href="#about"
-            class="nav-link px-5 py-8">O
-            nas</a></li>
-        <li class="offer py-8 hover:bg-black hover:text-white transition-colors duration-500"><a href="#offer"
-            class="nav-link px-5 py-8">Oferta</a></li>
-        <li class="contact py-8 hover:bg-black hover:text-white transition-colors duration-500"><a
-            href="src/pages/contact.html" class="nav-link px-5 py-8">Kontakt</a></li>
-      </ul>
+  <div class="container max-w-[1200px] flex justify-between items-center">
+    <div class="group flex p-6 text-2xl tablet:text-4xl ">
+      <a href="#home"><i
+          class="home tree fa-solid fa-tree mr-3 text-gray group-hover:text-green transition-colors duration-500"></i></a>
+      <a href="#home" class="group home">Forest</a>
     </div>
+    <!-- Burger menu -->
+    <button class="burger relative h-[40px] w-[40px] mr-6 z-10 tablet:hidden">
+      <span
+        class="first absolute top-1/2 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
+      <span
+        class="second absolute top-1/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
+      <span
+        class="third absolute top-3/4 left-1/2 w-full h-[4px] bg-gray rounded-3xl -translate-x-1/2 -translate-y-1/2 duration-500"></span>
+    </button>
+    <!-- navigation on mobile after click burger menu -->
+    <div
+      class="nav-screen fixed h-[100vh] w-full max-w-[450px] top-0 right-[-450px] bg-black text-white opacity-95 duration-500">
+      <div class="flex flex-col h-full justify-center items-center text-center">
+        <ul class="text-2xl space-y-4">
+          <li><a href="#home" class="nav-link-mobile nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link-mobile nav-link">O nas</a></li>
+          <li><a href="#offer" class="nav-link-mobile nav-link">Oferta</a></li>
+          <li><a href="./contact.html" class="nav-link-mobile nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Default navigation -->
+    <ul class="space-x-4 text-xl font-medium hidden tablet:flex">
+      <li class="nav-link home py-8 hover:bg-black hover:text-white transition-colors duration-500" id="desktop-nav-home"><a href="#home"
+          class="px-5 py-8">Home</a></li>
+      <li class="nav-link about py-8 hover:bg-black hover:text-white transition-colors duration-500" id="desktop-nav-about"><a href="#about"
+          class="px-5 py-8">O
+          nas</a></li>
+      <li class="nav-link offer py-8 hover:bg-black hover:text-white transition-colors duration-500" id="desktop-nav-offer"><a href="#offer"
+          class="px-5 py-8">Oferta</a></li>
+      <li class="nav-link contact py-8 hover:bg-black hover:text-white transition-colors duration-500" ><a
+          href="./contact.html" class="px-5 py-8">Kontakt</a></li>
+    </ul>
+  </div>
   </nav>
   <!-- Header -->
-  <header class="section" id="home">
+  <header class="section">
     <div class="relative">
       <img src="/assets/jungle-D4JdRXPb.jpg" class="tablet:h-[34rem] w-full object-cover"
         alt="Porośnięty most w środku dżungli">
@@ -71,7 +71,7 @@
     </div>
   </header>
   <main>
-    <!-- Sekcja o nas -->
+    <!-- About us section -->
     <section class="section mt-12 mb-10" id="about">
       <h2 class="mb-10 flex justify-center text-3xl tablet:text-5xl font-light uppercase">O nas</h2>
       <div
@@ -91,10 +91,7 @@
             laborum. www.MMCSchool.pl</p>
         </div>
       </div>
-    </section>
-    <!-- Sekcja rodzina -->
-    <section>
-      <div class="relative">
+      <div class="relative mt-10">
         <img src="/assets/girl-DQ-a6vrP.jpg" class="tablet:h-[25rem] w-full object-cover" alt="Dziewczyna idzie w las z plecakiem na plecach">
         <div class="absolute inset-0 bg-black/[.4]"></div>
         <div
@@ -104,7 +101,7 @@
         </div>
       </div>
     </section>
-    <!-- Sekcja oferta -->
+    <!-- Offer section -->
     <section class="section flex flex-col items-center mt-10 mx-auto" id="offer">
       <div class="text-center mb-10">
         <h2 class="mb-6 text-3xl tablet:text-5xl font-light uppercase">Oferta</h2>
@@ -181,6 +178,7 @@
           class="fa-solid fa-hand-point-up mr-4 rotate-90 text-green"></i>Sprawdź nasze pozostałe oferty!</a>
     </section>
   </main>
+  <!-- Footer -->
   <footer class="bg-footer">
     <div class="desktop:flex tablet:container">
       <div class="flex justify-center tablet:container tablet:justify-start">
@@ -210,7 +208,7 @@
           <h3 class="mb-1 text-lg desktop:text-xl font-semibold desktop:font-bold">Dokumenty</h3>
           <ul class="mb-4">
             <li class="mb-1 text-base cursor-pointer"><a href="#home">Wnioski</a></li>
-            <li class="mb-1 text-base cursor-pointer"><a href="#home">Rezerwacj</a></li>
+            <li class="mb-1 text-base cursor-pointer"><a href="#home">Rezerwacja</a></li>
           </ul>
         </div>
       </div>

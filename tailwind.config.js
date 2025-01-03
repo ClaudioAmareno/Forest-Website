@@ -14,8 +14,9 @@ export default {
 			colors: {
 				green: 'hsl(144, 71%, 53%)',
 				gray: '	hsl(0, 3%, 27%)',
-				lightGray: 'hsl(0, 2%, 53%)',
+				lightGray: 'hsl(0, 2%, 47%)',
 				footer: 'hsl(0, 22%, 96%)',
+				alert: 'hsl(0 , 100% , 53%)'
 			},
 			boxShadow: {
 				shadowCard: '-5px 3px 20px -9px rgba(66, 68, 90, 1)',

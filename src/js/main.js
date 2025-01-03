@@ -1,21 +1,18 @@
 const body = document.querySelector('.body')
-let sections = document.querySelectorAll('.section')
-const navigation = document.querySelector('.navbar')
 const navScreen = document.querySelector('.nav-screen')
 const navLinkMobile = document.querySelectorAll('.nav-link-mobile')
 const links = document.querySelectorAll('.nav-link')
 const burgerBtn = document.querySelector('.burger')
-const burgerExitBtn = document.querySelector('.burger-exit')
 const first = document.querySelector('.first')
 const second = document.querySelector('.second')
 const third = document.querySelector('.third')
 const footerYear = document.querySelector('.year')
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
 	const nav = document.querySelector('.navbar')
 
-	function addShadow(){
-		if (window.scrollY >= 300){
+	function addShadow() {
+		if (window.scrollY >= 300) {
 			nav.classList.add('shadow-bg')
 		} else {
 			nav.classList.remove('shadow-bg')
@@ -33,35 +30,37 @@ const showNav = () => {
 	third.classList.toggle('rotate-bar-third')
 }
 
-navLinkMobile.forEach(btn => {
-	btn.addEventListener('click', showNav)
-})
-
 const handleCurrenYear = () => {
 	const year = new Date().getFullYear()
-
 	footerYear.innerText = year
 }
 
-window.onscroll = () => {
-	sections.forEach(sec => {
-		let top = window.scrollY;
-		let offset = sec.offsetTop - 300;
-		let height = sec.offsetHeight;
-		let id = sec.getAttribute('id');
+const observer = new IntersectionObserver(
+	entries => {
+		entries.forEach(entry => {
+			const id = entry.target.id
+			const menuItem = document.querySelector(`#desktop-nav-${id}`)
+			
+			if (entry.isIntersecting) {
+				if (menuItem) {
+					menuItem.classList.add('active-state')
+				}
+			} else {
+				if (menuItem) {
+					menuItem.classList.remove('active-state')
+				}
+			}
+		})
+	},
+	{ threshold: 0.7 }
+)
 
-		if (top >= offset && top < offset + height) {
-			links.forEach(link => {
-				link.classList.remove('active-state')
-				document.querySelector('.nav-link[href*=' + id + ']').classList.add('active-state')
-	
-			})
-		}
-	})
-}
-
-
-
+document.querySelectorAll('.section').forEach(section => {
+	observer.observe(section)
+})
 
 handleCurrenYear()
 burgerBtn.addEventListener('click', showNav)
+navLinkMobile.forEach(btn => {
+	btn.addEventListener('click', showNav)
+})
